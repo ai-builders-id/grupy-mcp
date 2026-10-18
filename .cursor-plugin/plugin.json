@@ -1,0 +1,19 @@
+{
+  "name": "grupy",
+  "description": "Summarize, search, and manage your own WhatsApp groups from Cursor.",
+  "version": "1.1.0",
+  "author": {
+    "name": "AI Builders",
+    "email": "halo@grupy.chat"
+  },
+  "homepage": "https://grupy.chat/en/mcp",
+  "repository": "https://github.com/ai-builders-id/grupy-mcp",
+  "license": "MIT",
+  "keywords": ["whatsapp", "group-chat", "summarization", "search", "community-management", "mcp"],
+  "logo": "logo.svg",
+  "mcpServers": {
+    "grupy": {
+      "url": "https://mcp.grupy.chat/mcp"
+    }
+  }
+}

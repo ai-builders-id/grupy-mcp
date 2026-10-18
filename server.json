@@ -1,0 +1,85 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "chat.grupy/grupy",
+  "title": "Grupy",
+  "description": "Summarize, search, and manage your own WhatsApp groups from any MCP client.",
+  "version": "1.1.0",
+  "websiteUrl": "https://grupy.chat/en/mcp",
+  "repository": {
+    "url": "https://github.com/ai-builders-id/grupy-mcp",
+    "source": "github"
+  },
+  "icons": [
+    {
+      "src": "https://grupy.chat/favicon.svg",
+      "mimeType": "image/svg+xml",
+      "sizes": [
+        "any"
+      ]
+    },
+    {
+      "src": "https://grupy.chat/icon-512.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "512x512"
+      ]
+    },
+    {
+      "src": "https://grupy.chat/icon-192.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "192x192"
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.grupy.chat/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Optional. Grupy access key sent as 'Bearer <key>'. Leave it empty to sign in with OAuth.",
+          "isRequired": false,
+          "isSecret": true,
+          "value": "Bearer {grupy_access_key}",
+          "variables": {
+            "grupy_access_key": {
+              "description": "Grupy access key. Create it on the MCP page of the Grupy dashboard: https://grupy.chat/en/app/mcp.",
+              "isRequired": false,
+              "isSecret": true
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "_meta": {
+    "io.modelcontextprotocol.registry/publisher-provided": {
+      "tools": {
+        "total": 28,
+        "read": 17,
+        "write": 11
+      },
+      "prompts": [
+        "daily_briefing",
+        "weekly_review",
+        "my_tasks",
+        "group_digest"
+      ],
+      "permissions": [
+        "read_messages",
+        "manage_join_requests",
+        "manage_groups"
+      ],
+      "auth": [
+        "oauth2.1-pkce",
+        "bearer-access-key"
+      ],
+      "documentationUrl": "https://grupy.chat/en/docs",
+      "privacyPolicyUrl": "https://grupy.chat/en/privacy",
+      "termsUrl": "https://grupy.chat/en/terms",
+      "support": "halo@grupy.chat"
+    }
+  }
+}
