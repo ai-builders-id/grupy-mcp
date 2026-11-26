@@ -1,7 +1,7 @@
 # Grupy MCP
 
 [![MCP](https://img.shields.io/badge/MCP-Streamable%20HTTP-1f6feb)](https://grupy.chat/en/mcp)
-[![Tools](https://img.shields.io/badge/tools-28-0a7d5a)](#tools)
+[![Tools](https://img.shields.io/badge/tools-29-0a7d5a)](#tools)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![Official MCP Registry](https://img.shields.io/badge/registry-chat.grupy%2Fgrupy-8250df)](https://registry.modelcontextprotocol.io/v0.1/servers?search=chat.grupy/grupy)
 
@@ -58,13 +58,13 @@ Tools that need a permission do not appear until you turn that permission on.
 | Permission | Tools it adds |
 |------------|---------------|
 | None (always on) | 19 tools. See the first table below. |
-| Read messages | `read_messages`, `search_messages` |
+| Read messages | `read_messages`, `search_messages`, `read_document` |
 | Manage join requests | `decide_join_request`, `set_automation` |
 | Manage groups | `activate_groups`, `deactivate_groups`, `update_group_schedule`, `sync_groups`, `set_summary_language` |
 
 ## Tools
 
-Grupy MCP has 28 tools. Every tool has a title and the `readOnlyHint`, `destructiveHint`, and `openWorldHint` annotations.
+Grupy MCP has 29 tools. Every tool has a title and the `readOnlyHint`, `destructiveHint`, and `openWorldHint` annotations.
 Read tools set `readOnlyHint` to true. A tool that cannot be undone sets `destructiveHint` to true.
 
 ### Always available
@@ -97,6 +97,7 @@ Read tools set `readOnlyHint` to true. A tool that cannot be undone sets `destru
 |------|--------------|------|
 | `read_messages` | Returns stored messages of one active group for a time range. | Read |
 | `search_messages` | Finds stored messages that contain a text. | Read |
+| `read_document` | Reads the text inside one document that a member sent. | Read |
 
 ### With the Manage join requests permission
 

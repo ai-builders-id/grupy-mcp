@@ -1,7 +1,7 @@
 ---
 name: grupy
 description: Summarize, search, and manage the user's own WhatsApp groups through the Grupy MCP server. Use it for group summaries, tasks, join requests, and group settings.
-version: 1.1.0
+version: 1.2.0
 author: AI Builders
 license: MIT
 homepage: https://grupy.chat/en/mcp
@@ -65,6 +65,7 @@ Never ask the user to paste an access key into the chat. The user sets it as an 
 | Summarize several groups (Pro plan) | `summarize_groups` |
 | Find text in past summaries | `search`, then `fetch` |
 | Find text in stored messages | `search_messages`, `read_messages` (need the Read messages permission) |
+| Read the text inside a document | `read_document` with the `document_id` of a message (needs the Read messages permission) |
 | Who waits to join a group | `list_join_requests`, `get_automation` |
 | Approve or reject a join request | `decide_join_request` (needs the Manage join requests permission) |
 | Turn groups on or off | `activate_groups`, `deactivate_groups` (need the Manage groups permission) |

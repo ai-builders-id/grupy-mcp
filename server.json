@@ -3,7 +3,7 @@
   "name": "chat.grupy/grupy",
   "title": "Grupy",
   "description": "Summarize, search, and manage your own WhatsApp groups from any MCP client.",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "websiteUrl": "https://grupy.chat/en/mcp",
   "repository": {
     "url": "https://github.com/ai-builders-id/grupy-mcp",
@@ -57,8 +57,8 @@
   "_meta": {
     "io.modelcontextprotocol.registry/publisher-provided": {
       "tools": {
-        "total": 28,
-        "read": 17,
+        "total": 29,
+        "read": 18,
         "write": 11
       },
       "prompts": [

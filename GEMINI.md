@@ -18,6 +18,7 @@ Grupy connects you to the WhatsApp groups on the user's own account through the 
 | Summarize a group for a period | `summarize_group`. Then call `get_summary` until the status is `completed`. |
 | Find something in past summaries | `search`, then `fetch` for the text. |
 | Find something in the stored messages | `search_messages` (needs the Read messages permission). |
+| Read the text inside a document | `read_document` (needs the Read messages permission). |
 | Who waits to join a group | `list_join_requests` and `get_automation`. |
 | How much quota is left | `check_quota`. |
 

@@ -1,6 +1,6 @@
 {
   "name": "grupy",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Summarize, search, and manage your own WhatsApp groups.",
   "mcpServers": {
     "grupy": {
